@@ -56,4 +56,9 @@ class Menu extends Model
             })
         ];
     }
+
+    public function pages()
+    {
+        return $this->belongsToMany(\Modules\Component\Models\Page::class, 'nova_menu_page', 'menu_id', 'page_id');
+    }
 }

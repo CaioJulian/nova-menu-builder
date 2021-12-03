@@ -5,6 +5,7 @@ namespace OptimistDigital\MenuBuilder\Nova\Resources;
 use Laravel\Nova\Panel;
 use Laravel\Nova\Resource;
 use Illuminate\Http\Request;
+use Laravel\Nova\Fields\BelongsToMany;
 use Laravel\Nova\Fields\Text;
 use Laravel\Nova\Fields\Select;
 use OptimistDigital\MenuBuilder\MenuBuilder;
@@ -78,7 +79,9 @@ class MenuResource extends Resource
                     ->hideWhenCreating()
                     ->maxDepth($maxDepth)
                     ->readonly(),
-            ])
+            ]),
+
+            BelongsToMany::make(__('Pages'),'pages',\App\Nova\Site\Page::class)
         ];
     }
 }
