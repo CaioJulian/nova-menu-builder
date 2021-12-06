@@ -14,8 +14,8 @@ return [
     |--------------------------------------------------------------------------
     */
 
-    'menus_table_name' => 'nova_menu_menus',
-    'menu_items_table_name' => 'nova_menu_menu_items',
+    'menus_table_name' => 'nova_menus',
+    'menu_items_table_name' => 'nova_menu_items',
 
 
     /*

@@ -123,12 +123,12 @@ class MenuBuilder extends Tool
 
     public static function getMenusTableName()
     {
-        return config('nova-menu.menus_table_name', 'nova_menu_menus');
+        return config('nova-menu.menus_table_name', 'nova_menus');
     }
 
     public static function getMenuItemsTableName()
     {
-        return config('nova-menu.menu_items_table_name', 'nova_menu_menu_items');
+        return config('nova-menu.menu_items_table_name', 'nova_menu_items');
     }
 
     public static function getMenuClass()
